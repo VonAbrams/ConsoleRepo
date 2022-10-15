@@ -1,0 +1,15 @@
+C:\Temp\PersonalAI\MyConsole\bin\Debug\net6.0\MyConsole.exe
+C:\Temp\PersonalAI\MyConsole\bin\Debug\net6.0\MyConsole.deps.json
+C:\Temp\PersonalAI\MyConsole\bin\Debug\net6.0\MyConsole.runtimeconfig.json
+C:\Temp\PersonalAI\MyConsole\bin\Debug\net6.0\MyConsole.dll
+C:\Temp\PersonalAI\MyConsole\bin\Debug\net6.0\MyConsole.pdb
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.csproj.AssemblyReference.cache
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.AssemblyInfoInputs.cache
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.AssemblyInfo.cs
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.csproj.CoreCompileInputs.cache
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.dll
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\refint\MyConsole.dll
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.pdb
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\MyConsole.genruntimeconfig.cache
+C:\Temp\PersonalAI\MyConsole\obj\Debug\net6.0\ref\MyConsole.dll
