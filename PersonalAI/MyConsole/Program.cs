@@ -1,34 +1,130 @@
-﻿using System;
+﻿using System.Data;
+using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
+using Microsoft.VisualBasic.CompilerServices;
+using System;
 using System.Globalization;
-
-namespace FileLibrary;
+using BookStore;
+using ItemStore;
+using MyConsole.Shop;
+using MyConsole.FileFinderFolder;
+using MyConsole.Interfaces;
+using MyConsole;
+using static MyConsole.Utils;
 
 public delegate void Del(int i, double j);
 public delegate void NewDel();
-public delegate void LibraryDel();
+public delegate void ItemDel(int i);
 //public delegate Func<string> StringFunc();
 public class MainHubClass
 {
 
+    internal class Coffee { }
+    internal class Bacon { }
+    internal class Eggs { }
+    internal class Toast { }
+
     public static void Main(string[] args)
     {
+        BookDB bookDB = new BookDB();
+        ItemDB itemDB = new ItemDB();
+        AddItems(itemDB);
 
-        Action<string> unitAction;
+        //System.Console.WriteLine(itemDB.GenerateTotal(GenerateSubTotal, CalculateLevelDiscount, DiscountMessage));
 
-        Unit unit1 = new Unit();
-        Unit unit2 = new Unit();
+        var path = @"C:\Users\Student\Documents\games";
 
-        unitAction = unit1.TestUnitAction;
-        unitAction("Action Baby!!!");
 
-        unitAction = unit2.TestUnitAction;
-        unitAction("Hot girl shit");
+        bool isKnightAwake = false;
+        bool isArcherAwake = true;
+        bool isPrisonerAwake = false;
+        bool isDogPresent = true;
+        QuestLogic.CanFreePrisoner(isKnightAwake, isArcherAwake, isPrisonerAwake, isDogPresent);
 
+
+        System.Console.WriteLine("Process Complete.");
 
 
         System.Console.WriteLine("Press any key");
         Console.ReadLine();
 
+    }
+
+    public class Lasagna
+    {
+
+        public int ExpectedMinsInOven()
+        {
+            return 40;
+        }
+
+        public int PreparationTimeInMins(int layers)
+        {
+            return layers * 2;
+        }
+
+        public int RemainingMinsInOven(int mins)
+        {
+            int expectedMins = ExpectedMinsInOven();
+            return expectedMins % mins;
+        }
+
+        public int ElapsedTimeInMins(int layers, int mins)
+        {
+            int doneTime = RemainingMinsInOven(layers) + PreparationTimeInMins(mins);
+            return doneTime;
+        }
+    }
+
+
+
+
+    static decimal CalculateLevelDiscount(List<Item> discountedItems, decimal subTotal)
+    {
+        if (subTotal > 100)
+        {
+            return subTotal * 0.80M;
+        }
+        else
+        {
+            return subTotal;
+        }
+
+    }
+
+    static void DiscountMessage(string message)
+    {
+        System.Console.WriteLine(message);
+    }
+    static void PrintTitles(Book b)
+    {
+        System.Console.WriteLine($"{b.Title}");
+    }
+
+    static void GenerateSubTotal(decimal subTotal)
+    {
+        System.Console.WriteLine("This is the total of your items " + subTotal);
+    }
+
+    static void AddBooks(BookDB bookDB)
+    {
+        bookDB.AddBook("Harry Potter", "J.K Rowlings", 19.95m, true);
+        bookDB.AddBook("Intro to Programming", "John D Prog", 39.95m, true);
+        bookDB.AddBook("Into the Void", "Books Authorson", 129.95m, false);
+        bookDB.AddBook("Fake Books", "Guy Books", 12.00m, true);
+    }
+
+    static void AddItems(ItemDB itemDB)
+    {
+        itemDB.AddItem("Apple", 1.95m);
+        itemDB.AddItem("Grapes", 1.00m);
+        itemDB.AddItem("Pants", 19.95m);
+        itemDB.AddItem("Shoes", 20.99m);
+    }
+
+    static void PrintItems(Item item)
+    {
+        System.Console.WriteLine($"{item.itemName}");
     }
 }
 
@@ -91,35 +187,15 @@ class NextCollection<T>
     }
 }
 
-class MathClass
-{
-    public void DoThis()
-    {
-        System.Console.WriteLine("Void method");
-    }
 
-    public static void DoThat()
-    {
-        System.Console.WriteLine("Static method");
-    }
-
-    public void Multiplier(int x, double y)
-    {
-        System.Console.WriteLine(x * y + " ");
-    }
-
-    public void Adder(int x, double y)
-    {
-        System.Console.WriteLine(x + y + " ");
-    }
-}
 
 class Unit : Person
 {
     string? unitFirstName { get; set; }
     string? unitLastName { get; set; }
-
     string? unitFullName { get; }
+
+    string? unitEmailAddress { get; set; }
     int? unitAge;
     public Unit()
     {
@@ -181,6 +257,11 @@ public class Person
     public string? lastname { get; set; }
 
     public int? age { get; set; }
+
+    public void canMove()
+    {
+        System.Console.WriteLine("I can move!");
+    }
 
 }
 

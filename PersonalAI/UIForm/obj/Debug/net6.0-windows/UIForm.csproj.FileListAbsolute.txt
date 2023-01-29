@@ -1,0 +1,15 @@
+C:\Temp\PersonalAI\UIForm\bin\Debug\net6.0-windows\UIForm.exe
+C:\Temp\PersonalAI\UIForm\bin\Debug\net6.0-windows\UIForm.deps.json
+C:\Temp\PersonalAI\UIForm\bin\Debug\net6.0-windows\UIForm.runtimeconfig.json
+C:\Temp\PersonalAI\UIForm\bin\Debug\net6.0-windows\UIForm.dll
+C:\Temp\PersonalAI\UIForm\bin\Debug\net6.0-windows\UIForm.pdb
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.csproj.AssemblyReference.cache
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.AssemblyInfoInputs.cache
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.AssemblyInfo.cs
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.csproj.CoreCompileInputs.cache
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.dll
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\refint\UIForm.dll
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.pdb
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\UIForm.genruntimeconfig.cache
+C:\Temp\PersonalAI\UIForm\obj\Debug\net6.0-windows\ref\UIForm.dll
